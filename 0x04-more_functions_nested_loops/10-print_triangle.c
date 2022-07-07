@@ -1,34 +1,21 @@
 #include "main.h"
-
 /**
- * print_triangle - print triangle with size var
- * @var: size of triangle to print
- *
- * Created by: Victory Nyambura
- * cc: 7th july, 2022
+ * print_triangle - Prints a triangle, using the character #.
+ * @size: The size of the triangle.
  */
-
-void print_triangle(int var)
+void print_triangle(int size)
 {
-	if (var < 1)
-		_putchar('\n');
-	else
-	{
-		int size = 1;
-
-		do {
-			int ii;
-
-			for (ii = 1; ii <= var; ii++)
-			{
-				if (ii > (var - size))
-					_putchar('#');
-				else
-					_putchar(' ');
-			}
-
-			_putchar('\n');
-			size++;
-		} while (size <= var);
-	}
+int hash, index;
+if (size > 0)
+{
+for (hash = 1; hash <= size; hash++)
+{
+for (index = size - hash; index > 0; index--)
+_putchar(' ');
+if (hash == size)
+continue;
+_putchar('\n');
+}
+}
+_putchar('\n');
 }
