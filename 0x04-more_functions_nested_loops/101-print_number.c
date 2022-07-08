@@ -1,31 +1,31 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int _putchar(char c);
 
 /**
- * print - subfunction to print
- * @n: var
+ * print_number - prints numbers
+ * @n: number to be printed
+ * Return: void
  */
-
-void print(unsigned int n)
+void print_number(int n)
 {
-	if (n / 10)
-		print(n / 10);
-	_putchar(n % 10 + '0');
-}
+	unsigned int n1 = 0;
 
-/**
- * print_number - print an integer
- * @var: the integer to be printed
- *
- * Created by: Njagiv
- * cc: 7th july, 2022
- */
-
-void print_number(int var)
-{
 	if (n < 0)
 	{
+		n1 = -n;
 		_putchar('-');
-		n = -n;
 	}
-	print((unsigned int) var);
+	else
+	{
+		n1 = n;
+	}
+	if (n1 / 10)
+	{
+		print_number(n1 / 10);
+	}
+	_putchar((n1 % 10) + '0');
 }
+
