@@ -1,18 +1,18 @@
-/*
- * File: 3-puts.c
- * Auth: Njagiv
- */
-
 #include "main.h"
-
 /**
- * _puts - Prints a string to stdout.
- * _puts - Prints a string to stdout.
+ * _puts - prints str followed by a new line
+ * @str: pointer to the string to point
+ * Return: void
  */
+
 void _puts(char *str)
 {
-	while(*str)
-		_putchar(*str++);
+	int i = 0;
 
+	while (str[i])
+	{
+		_putchar(str[i]);
+		i++;
+	}
 	_putchar('\n');
 }
