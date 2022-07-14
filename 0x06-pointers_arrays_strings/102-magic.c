@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main -Entry point
  *
- * Description: A dream doesn't become reality through magic;
- * it takes sweat, determination and hard work
- *
+ * Desc: Add one line to this code,
+ * so that the program prints a[2] = 98,
+ * followed by a new line.
  * Return: Always 0 (Success)
  */
 int main(void)
