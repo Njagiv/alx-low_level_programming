@@ -1,2 +1,2 @@
-this is argv and argc
-so fun cant wait
+this is argc and argv project 
+so excited
